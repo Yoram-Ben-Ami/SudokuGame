@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+    <title>Sudoku</title>
+</head>
+<header>
+    <h1>Sudoku</h1>
+    <div id="setup-game">
+        <div id="diff">
+            <h5>Difficulty</h5>
+            <select id="diff-a" class="minimal">
+                <option value="41">Easy</option>
+                <option value="51">Medium</option>
+                <option value="61">Hard</option>
+                <option value="71">Impossible</option>
+            </select>
+        </div>
+        <div id="time">
+            <h5>Time</h5>
+            <select id="time-selector" class="minimal">
+                <option value="0">Count Time</option>
+                <option value="3">3 min Hard</option>
+                <option value="5">5 min Medium </option>
+                <option value="10">10 min Easy</option>
+            </select>
+        </div>
+        <div id="theme">
+            <h5>Theme</h5>
+            <select id="theme-selector" class="minimal">
+                <option value="theme-1">Light</option>
+                <option value="theme-2">Dark</option>
+            </select>
+        </div>
+    </div>
+    <button id="start-btn" class="button-19">New Game</button><button id="SudokuSolver" class="button-19">Sudoku
+        Solver</button>
+</header>
+
+<body>
+    <div id="stats">
+        <p id="timer">Timer</p>
+        <p id="lives">Lives</p>
+        <div id="funcation"><button id="getHint" class="hidden">Get hint</button> <button id="PressForSol"
+                class="hidden">Solve It</button> </div>
+    </div>
+
+
+    <div id="game">
+        <div id="board"></div>
+        <div id="number-container" class="hidden">
+            <p id="one">1</p>
+            <p id="two">2</p>
+            <p id="three">3</p>
+            <p id="four">4</p>
+            <p id="five">5</p>
+            <p id="six">6</p>
+            <p id="seven">7</p>
+            <p id="eight">8</p>
+            <p id="nine">9</p>
+        </div>
+
+    </div>
+</body>
+<footer>
+    <p>MADE BY YORAM BEN AMI</p>
+</footer>
+
+</html>
